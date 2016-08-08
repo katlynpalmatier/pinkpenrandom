@@ -1,9 +1,9 @@
-var R = 255
-var G = 200
-var B = 200
+var R = 0
+var G = 0
+var B = 0
 function setup() {
-  createCanvas(500, 500);
-  background(255, 255, 255);
+  createCanvas(1200, 1200)
+  background(0, 0, 0);
 }
 function draw() {
     fill(R, G, B);
@@ -11,11 +11,12 @@ function draw() {
     G = 30;
     B = 150;
     noStroke();
-    ellipse(mouseX, mouseY, 7, 7);
+    ellipse(mouseX, mouseY, 13, 13);
     if(mouseIsPressed){
       noStroke();
-      fill(255, 255, 255);
+      fill(0, 0, 0);
       ellipse(mouseX, mouseY, 15, 15);
     }
+  
 
 }
